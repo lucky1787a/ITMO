@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №2. Операторы управления, функции. Объекты ядра JavaScript. Задание 7.</title>
+    <script language="JavaScript">
+        function dis() {
+            discipline = new Array("История", " Философия", " Психология", " Я больше не знаю", " Математика", " Информатика", " Физика", " Может быть что-то еще");
+            gumanitary = new Array(); //Гуманитарные дисциплины
+            gumanitary = discipline.slice(0,4);
+            technical = new Array(); //Технические дисциплины
+            technical = discipline.slice(4);
+            document.write("Гуманитарные дисциплины: "+gumanitary+"."+"<br>");
+            document.write("Технические дисциплины: "+technical+"."+"<br>");
+        }
+    </script>
+</head>
+<body>
+    <script language="JavaScript">
+        year = new Array("декабрь", "январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь");
+        summer = new Array(); //летние месяцы
+        summer = year.slice(6,9);
+        document.write(summer+"<br>");
+        dis();
+    </script>
+</body>
+</html>

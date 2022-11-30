@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №3. Объекты клиентских приложений. Обработка событий. Задание 14.</title>
+</head>
+<body>
+    <style>
+        .textarea {
+            overflow: scroll;
+            height: 100px;
+            resize: none;
+        }
+    </style>
+    <form name="forms" onsubmit="changePass()">
+        Ваше имя:*<input type="text" size="5" value="" required><br>
+        Пароль:*<input id="pass1" type="password" size="5" minlength="4" value="" required><br>
+        Потверждение пароля:*<input id="pass2"  type="password" size="5" required><br>
+        Электронный адрес:*<input type="email" size="5" required><br>
+        Тема сообщения:*<input type="text" size="5" required><br>
+        Сообщение:<textarea class="textarea" minlength="10"></textarea><br>
+        <input type="submit" value="Отправить"><input type="reset" value="Очистить"><br>
+        * - необходимые для заполнения
+    </form>
+    <script type="text/javascript">        
+        let pass1 = document.getElementById("pass1").value;
+        let pass2 = document.getElementById("pass2").value;
+        function changePass() {
+            if (pass1 == pass2) {
+            alert ("Пароль введен правильно!");
+            } else {
+            alert ("Пароль введен неправильно!");
+        }
+        }
+    </script>
+</body>
+</html>
