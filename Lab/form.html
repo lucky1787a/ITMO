@@ -50,6 +50,10 @@
 		alert ("Fill in the field 'email'.");
 		valid = false;
 	}
+	if (document.checkForm.refer.selectedIndex == ""){
+		alert ("Fill in the field 'Where did you hear about us'.");
+		valid = false;
+	}
 	return valid;
 }
 </script>
